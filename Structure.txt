@@ -1,0 +1,50 @@
+
+Here I will attempt to explore the sturcture necessary for this project.
+
+Population is a list of persons
+
+Person has a list of favourites
+
+MakePopulation makes a list of persons
+
+GenerateFavourites(population) generates a new list of favourites for each person
+
+FavouriteList is a list of JobIDs with corresponding energy values.
+
+A job is only relevant by its id and a JobID is an integer.
+
+At this point the population is called a scenario.
+
+A Solution is a partial or complete 1to1 assignment of JobIDs to persons.
+
+GetBestChoice(FavouriteList,Solution) gives the best choice from the favouriteList given the Solution so far.
+
+LotterySolver shuffles the population, then asks them one by one for the best choice until all places are given.
+
+The Solution can return the energy of the solution.
+A person can return the energy of an assignemnt.
+A person can return the position of an assignment in the favourites list.
+
+Plot the distribution of the favourites postions for a given scenario and solution.
+Plot the distribution of the favourites postions for a given scenario and many solutions.
+Plot the distribution of the favourites postions for many (scenario and solution).
+
+Plot the distribution of the solution energy for many lottery solutions of the same scenario.
+Plot the distribution of the solution energy for many (lottery solution of a new scenario).
+
+Get the average solution energy for many solutions and many scenarios.
+Get the average solution energy for many solutions and a given scenario.
+
+On to the optimizer:
+    1. generate a random solution
+    2. get energy of solution
+    3. propose a swap
+    4. get energy of swap.
+    5. Decide if swap shall be executed.
+    6. Execute swap if decided.
+    7. Goto 2.
+
+Controllers:
+    * End conditions.
+    * Temperature profile
+    * Ensemble handler.
