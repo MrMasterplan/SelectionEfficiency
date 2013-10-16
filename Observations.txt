@@ -1,0 +1,14 @@
+
+Only lottery solutions are considered.
+
+The favorite selection Method 1 allows for very good solutions.
+Method 2 solutions are somewhat worse and method 3 solutions are the worst.
+Quality is hereby ascribed to the total energy of the solution and a visual inspection of the lenth of the tails on the individual result distribution.
+
+In Mehtod 1 scenarios with 400 persons and 405 jobs almost noone has to choose below 50. and noone ever over 100.
+Solution energy (defined as a the sum of favorite positions) are in the 1000-1500 range.
+
+In method 2 or 3 scenarios the are always a few that get to choose a very low favorite. An even sprinkling into the late 300s is always observed.
+solution energies are all the way between 4000 to 12000.
+
+Interestingly, for a given scenario the spread of solution energies is narrow, around 20% roughly independent of the central value. This means that the solution energy is largely defined by the scenario and not by the solution.
